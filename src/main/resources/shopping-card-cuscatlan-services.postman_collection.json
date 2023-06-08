@@ -95,7 +95,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"fernando\",\r\n    \"password\": \"fernando\",\r\n    \"name\": \"alma oliva\",\r\n    \"identification\": \"000002-2\",\r\n    \"adress\": \"La Libertad, Colon.\"\r\n}",
+							"raw": "{\r\n    \"username\": \"Fernando\",\r\n    \"password\": \"Fernando\",\r\n    \"name\": \"Fernando Climaco\",\r\n    \"identification\": \"05570911-2\",\r\n    \"address\": \"Rosario,La paz.\",\r\n    \"country\" : \"el salvador\",\r\n    \"phone\": \"7777-7777\",\r\n    \"email\" : \"fernandoaclimaco@hotmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -129,7 +129,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJuYW5kbyIsImV4cCI6MTY4NjIwNjk3OCwiaWF0IjoxNjg2MTg4OTc4fQ.t_HOMOoYfno3LxZOzT8mT-VqJc0Dpc9fVRvU-IeFJ_KZb4BMMIEjibywBSj--Yyu1iNBVH2Ha8ST8b3K1PtsJg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4NjIwOTQ0MCwiaWF0IjoxNjg2MjA1ODQwfQ.T1PmEHc7I5O26X1DU_FDkDOBg8fRtcN84JjryFzXFgkAEuLqF_eMtQKEv1qmC1-q20JseWypbNp1LFwrkiy3zw",
 									"type": "string"
 								}
 							]
@@ -153,7 +153,7 @@
 			]
 		},
 		{
-			"name": "ProductsCarService",
+			"name": "ProductService",
 			"item": [
 				{
 					"name": "AddSaveOnProduct",
@@ -291,7 +291,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJuYW5kbyIsImV4cCI6MTY4NjIwOTI1MywiaWF0IjoxNjg2MTkxMjUzfQ.rUx3drt6yyuklCIyFPBBvkHZw7Y06uSTTbqlwWFXgeOvH2y1SLKvqR9RyZOT9YLgfjgTLFdDGSvWMEZEjDRtUg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4NjIxMzc1MiwiaWF0IjoxNjg2MjEwMTUyfQ.sBJ7a_kFk_-CKieS51q7YAD3cWK3MgKIUOc9rT1CEQ8eZ7tMCU0GvFi53SrKNTbwmO6PgGHQkJiuA3YuO-G3Jg",
 									"type": "string"
 								}
 							]
@@ -320,7 +320,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZXJuYW5kbyIsImV4cCI6MTY4NjIwOTI1MywiaWF0IjoxNjg2MTkxMjUzfQ.rUx3drt6yyuklCIyFPBBvkHZw7Y06uSTTbqlwWFXgeOvH2y1SLKvqR9RyZOT9YLgfjgTLFdDGSvWMEZEjDRtUg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4NjIxMzc1MiwiaWF0IjoxNjg2MjEwMTUyfQ.sBJ7a_kFk_-CKieS51q7YAD3cWK3MgKIUOc9rT1CEQ8eZ7tMCU0GvFi53SrKNTbwmO6PgGHQkJiuA3YuO-G3Jg",
 									"type": "string"
 								}
 							]
@@ -336,6 +336,13 @@
 							"path": [
 								"client",
 								"list"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": null,
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -489,6 +496,47 @@
 								"shopping",
 								"remove",
 								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "convertrejected",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4NjI0Mzg3MiwiaWF0IjoxNjg2MjQwMjcyfQ.16skFr_q6Gz6J4CHaL1bbIcVoB8x1gk77OWcqAo5V5oqQoKkTRf_GeOnzRoudLubh47HhoXywPWJV4Xoj7TtvQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:2024/orders/state",
+							"host": [
+								"localhost"
+							],
+							"port": "2024",
+							"path": [
+								"orders",
+								"state"
 							]
 						}
 					},
