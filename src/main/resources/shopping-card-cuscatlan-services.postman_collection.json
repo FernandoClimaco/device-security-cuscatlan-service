@@ -6,57 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Products",
-			"item": [
-				{
-					"name": "AllProducts",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://fakestoreapi.com/products/",
-							"protocol": "https",
-							"host": [
-								"fakestoreapi",
-								"com"
-							],
-							"path": [
-								"products",
-								""
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "ProductsById",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "https://fakestoreapi.com/products/:id",
-							"protocol": "https",
-							"host": [
-								"fakestoreapi",
-								"com"
-							],
-							"path": [
-								"products",
-								":id"
-							],
-							"variable": [
-								{
-									"key": "id",
-									"value": "1"
-								}
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Autentication",
 			"item": [
 				{
@@ -66,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+							"raw": "{\r\n    \"username\": \"Fernando\",\r\n    \"password\": \"Fernando\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
